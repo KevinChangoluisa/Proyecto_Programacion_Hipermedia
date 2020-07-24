@@ -190,7 +190,7 @@ h4 {
 
 @media (min-width: 768px) {
     .mobile-menu {
-        display: none;
+        display: 1rem;
     }
 }
 
