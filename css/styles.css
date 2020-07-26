@@ -107,105 +107,23 @@ h4 {
 }
 
 
-/* Header */
+/*
+Header*/
 
-.site-header {
-    background-color: #333333;
-    padding: 1rem 0 3rem 0;
-}
-
-.site-header.inicio {
-    background-image: url(../img/header.jpg);
-    background-position: center center;
-    background-size: cover;
+.carousel-item {
     height: 100vh;
-    min-height: 60rem;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-.contenido-header {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-}
-
-@media (min-width: 768px) {
-    .contenido-header {
-        text-align: left;
-    }
-}
-
-.contenido-header h1 {
-    color: #ffffff;
-    padding-bottom: 2rem;
-    max-width: 60rem;
-    line-height: 2;
-}
-
-.barra {
-    padding-top: 3rem;
-}
-
-@media (min-width: 768px) {
-    .barra {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-}
-
-
-/** Navegacion **/
-
-.navegacion a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 2.2rem;
-    display: block;
-}
-
-@media (min-width: 768px) {
-    .navegacion a {
-        display: inline-block;
-        font-size: 1.8rem;
-        /** = 18px **/
-        margin-right: 2rem;
-    }
-    .navegacion a:last-of-type {
-        margin: 0;
-    }
-}
-
-.navegacion a:hover {
-    color: #71B100;
-}
-
-
-/** Mobile Menu tipo hambuerguesa**/
-
-.mobile-menu img {
-    width: 5rem;
-}
-
-@media (min-width: 768px) {
-    .mobile-menu {
-        display: none;
-    }
-}
-
-.navegacion:target {
-    display: block;
-}
-
-.navegacion {
-    display: none;
-}
-
-@media (min-width: 768px) {
-    .navegacion {
-        display: block;
-    }
+.carousel-inner h2 {
+    margin: auto;
+    line-height: 500px;
+    vertical-align: middle;
 }
 
 
@@ -442,19 +360,12 @@ h4 {
 }
 
 
-/** PAGINAS INTERNAS **/
+/*Paginas internas*/
 
-
-/* Nosotros **/
-
-@media (min-width: 768px) {
-    .contenido-nosotros {
-        display: grid;
-        /*grid-template-columns Dependiendo  del tamaño de pantalla
-        las columas se iran aumentando o disminuyendo */
-        grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 2rem;
-    }
+.contenido-nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
 }
 
 .texto-nosotros blockquote {
@@ -464,64 +375,6 @@ h4 {
     padding: 1rem 0 3rem 0;
 }
 
-
-/** Anuncio **/
-
-.resumen-propiedad {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-/** Contacto **/
-
-.contacto p {
-    font-size: 1.4rem;
-    color: #4f4f4f;
-    margin: 2rem 0 0 0;
-}
-
-legend {
-    font-size: 2rem;
-    color: #4f4f4f;
-}
-
-label {
-    font-weight: 700;
-    text-transform: uppercase;
-    display: block;
-}
-
-input:not([type="submit"]),
-textarea,
-select {
-    padding: 1rem;
-    display: block;
-    width: 100%;
-    background-color: #e1e1e1;
-    margin-bottom: 2rem;
-    border: none;
-    border-radius: 1rem;
-}
-
-input[type="radio"] {
-    width: auto;
-    margin: 0;
-}
-
-select {
-    -webkit-appearance: none;
-    appearance: none;
-}
-
-textarea {
-    height: 20rem;
-}
-
-.forma-contacto {
-    max-width: 30rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.texto-nosotros p {
+    text-align: justify;
 }
