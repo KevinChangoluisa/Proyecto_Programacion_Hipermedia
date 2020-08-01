@@ -1,6 +1,11 @@
 <?php
+<<<<<<< HEAD
 include("includes/templates/menu.php");
 include("includes/templates/header.php");
+=======
+include("vistas/menu.html");
+include("vistas/header.html");
+>>>>>>> f3f1b4545196b4e770e5eae4bb6d294d608ed185
 ?>
 <section class="nosotros contenedor seccion" id="nosotros">
     <h2 class="fw-300 centrar-texto">Más Sobre Nosostros</h2>
@@ -40,6 +45,7 @@ include("includes/templates/header.php");
     </div>
 </section>
 
+<<<<<<< HEAD
 
 <div class="contador parallax">
     <div class="contenedor">
@@ -64,6 +70,32 @@ include("includes/templates/header.php");
 
 
 <section class="anuncios seccion contenedor" id="anuncios">
+=======
+<section class="seccion">
+    <div class="contador parallax">
+        <div class="contenedor">
+            <ul class="resumen-clientes">
+                <li>
+                    <p class="numero">1500</p>Clientes satisfechos
+                </li>
+                <li>
+                    <p class="numero">35</p>Ciudades disponibles
+                </li>
+                <li>
+                    <p class="numero">400</p>inmuebles
+                </li>
+                <li>
+                    <p class="numero">365</p>Dias del año
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<main class="anuncios seccion contenedor" id="anuncios">
+>>>>>>> f3f1b4545196b4e770e5eae4bb6d294d608ed185
     <h2 class="fw-300 centrar-texto">Casas y departamentos en alquiler</h2>
     <div class="contenedor-anuncios">
         <div class="anuncio">
@@ -130,9 +162,15 @@ include("includes/templates/header.php");
         </div>
     </div>
     <div class="ver-todas">
+<<<<<<< HEAD
         <a href="anuncios.php" class="boton boton-verde">Ver todas</a>
     </div>
 </section>
+=======
+        <a href="anuncios.html" class="boton boton-verde">Ver todas</a>
+    </div>
+</main>
+>>>>>>> f3f1b4545196b4e770e5eae4bb6d294d608ed185
 
 <section class="seccion contenedor">
     <h2 class="fw-300 centrar-texto">Disfruta de nuestras ofertas de verano</h2>
@@ -210,8 +248,13 @@ include("includes/templates/header.php");
 <section class="imagen-contacto container">
     <div class="contenedor contenido-contacto">
         <h2>Encuentra la casa de tus sueños</h2>
+<<<<<<< HEAD
         <p>Llena el formulario de contacto y un asesor se pondrá en contacto contigo a la brevedad.</p>
         <a href="contacto.html" class="boton boton-amarillo">Contáctenos</a>
+=======
+        <p>Llena el formulario de contacto y un asesor se pondra en contacto ntigo a la brevedad.</p>
+        <a href="contacto.html" class="boton boton-amarillo">Contactános</a>
+>>>>>>> f3f1b4545196b4e770e5eae4bb6d294d608ed185
     </div>
 </section>
 
@@ -264,6 +307,34 @@ include("includes/templates/header.php");
 
 </div>
 
+<<<<<<< HEAD
 <?php
 include("includes/templates/footer.php");
 ?>
+=======
+<footer class="site-footer seccion">
+    <div class="contenedor contenedor-footer">
+        <nav class="navegacion">
+            <a href="nosotros.html">Nosotros</a>
+            <a href="anuncios.html">Anuncios</a>
+            <a href="blog.html">Blog</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <p class="copyright">Todos los Derechos Reservados 2019 &copy; </p>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
+</body>
+
+</html>
+
+</html>
+>>>>>>> f3f1b4545196b4e770e5eae4bb6d294d608ed185
