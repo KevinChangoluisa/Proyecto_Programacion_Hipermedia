@@ -24,36 +24,40 @@ include("includes/templates/menu.php");
             <h3 class="titulo">
                 <?php echo $anuncios['nombre_predio']; ?>
             </h3>
-
-            <img src="data:image/jpg;base64,<?php echo $anuncios['img1'];?>" alt="Red dot" />
             <div class="imagenes-anuncio">
                 <div id="demo" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <a href="./img/<?php echo $anuncios['img1'];?>" data-fancybox>
-                                <img src="./img/<?php echo $anuncios['img1'];?>" />
-                            </a>
+                            <?php echo '<a href="data:image/jpeg;base64,'.base64_encode($anuncios["img1"]).'"data-fancybox>';
+                            echo '<img src="data:image/jpeg;base64,'.base64_encode($anuncios["img1"]).'"/>';
+                            echo'</a>'
+                            ?>
                         </div>
                         <div class="carousel-item">
-                            <a href="./img/<?php echo $anuncios['img2'];?>" data-fancybox>
-                                <img src="./img/<?php echo $anuncios['img2'];?>" />
-                            </a>
+                            <?php echo '<a href="data:image/jpeg;base64,'.base64_encode($anuncios["img2"]).'"data-fancybox>';
+                            echo '<img src="data:image/jpeg;base64,'.base64_encode($anuncios["img2"]).'"/>';
+                            echo'</a>'
+                            ?>
                         </div>
                         <div class="carousel-item">
-                            <a href="./img/<?php echo $anuncios['img3'];?>" data-fancybox>
-                                <img src="./img/<?php echo $anuncios['img3'];?>" />
-                            </a>
+                            <?php echo '<a href="data:image/jpeg;base64,'.base64_encode($anuncios["img3"]).'"data-fancybox>';
+                            echo '<img src="data:image/jpeg;base64,'.base64_encode($anuncios["img3"]).'"/>';
+                            echo'</a>'
+                            ?>
                         </div>
                         <div class="carousel-item">
-                            <a href="./img/<?php echo $anuncios['img4'];?>" data-fancybox>
-                                <img src="./img/<?php echo $anuncios['img4'];?>" />
-                            </a>
+                            <?php echo '<a href="data:image/jpeg;base64,'.base64_encode($anuncios["img4"]).'"data-fancybox>';
+                            echo '<img src="data:image/jpeg;base64,'.base64_encode($anuncios["img4"]).'"/>';
+                            echo'</a>'
+                            ?>
                         </div>
                         <div class="carousel-item">
-                            <a href="./img/<?php echo $anuncios['img5'];?>" data-fancybox>
-                                <img src="./img/<?php echo $anuncios['img5'];?>" />
-                            </a>
+                            <?php echo '<a href="data:image/jpeg;base64,'.base64_encode($anuncios["img5"]).'"data-fancybox>';
+                            echo '<img src="data:image/jpeg;base64,'.base64_encode($anuncios["img5"]).'"/>';
+                            echo'</a>'
+                            ?>
                         </div>
+                        
                     </div>
                     <a class="carousel-control-prev" href="#demo" data-slide="prev">
                         <span class="carousel-control-prev-icon"></span>
@@ -395,12 +399,7 @@ include("includes/templates/menu.php");
                         value="<?php echo $anuncios['id_anuncio']; ?>">RESERVAR</button>
                 </form>
             </div>
-
         </div>
-
-
-
-
         <?php }?>
     </div>
     <?php $conn->close(); ?>

@@ -21,6 +21,10 @@
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
+<script type="text/javascript" src="./js/jquery.animateNumber.min.js"></script>
+<script type="text/javascript" src="./js/plugins.js"></script>
+<script type="text/javascript" src="./js/main.js"></script>
+<script type="text/javascript" src="./js/mapa.js"></script>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
