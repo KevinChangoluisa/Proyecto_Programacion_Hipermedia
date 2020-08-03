@@ -396,11 +396,12 @@ include("includes/templates/menu.php");
             <div class="boton-reservar">
                 <form action="reservaciones.php" method="post">
                     <button class="btn btn-info" name="id_anuncio" type="submit"
-                        value="<?php echo $anuncios['id_anuncio']; ?>">RESERVAR</button>
+                        value="<?php echo $anuncios['id_predio']; ?>">RESERVAR</button>
                 </form>
             </div>
         </div>
         <?php }?>
+        
     </div>
     <?php $conn->close(); ?>
 </section>

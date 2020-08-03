@@ -3,12 +3,13 @@ include("includes/templates/menu.php");
 ?>
 
 <?php
+
 $id_anuncio = $_POST['id_anuncio'];
     try{
         require_once('includes/funciones/bd_conexion.php');
-        $sql =" SELECT id_anuncio,nombre_predio,max_personas,img1,precioxdia,fecha_inicio,fecha_fin,promocion,fecha_fin_promocion,descuento";
+        $sql =" SELECT *";
         $sql.=" FROM anuncios ";
-        $sql.=" WHERE id_anuncio= $id_anuncio";
+        $sql.=" WHERE id_predio= $id_anuncio";
         $resultado = $conn->query($sql);
     }catch (\Exception $e){
         echo $e->getMessage();
@@ -18,7 +19,7 @@ $id_anuncio = $_POST['id_anuncio'];
 <br>
 <br>
 <?php while ($anuncios = $resultado->fetch_assoc()){?>
-<h2 class="fw-300 centrar-texto">Reservacion <b><?php echo $anuncios['nombre_predio']; ?></b></h2>
+<h2 class="fw-300 centrar-texto">Reservacion <b><?php echo $anuncios['id_predio']; ?></b></h2>
 <main class="contenedor seccion contenido-centrado">
     <div style="
     align-items: center;display: flex; flex-direction: column;

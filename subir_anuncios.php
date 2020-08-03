@@ -89,15 +89,14 @@
 
 
                     <label>Imagen 4</label>
-
                     <input type="file" id="archivo" name="img4" accept=".jpg,.png" required onchange="validar()" />
+
                     <label>Imagen 5</label>
                     <input type="file" id="archivo" name="img5" accept=".jpg,.png" required onchange="validar()" />
 
                     <label>Imagen 6</label>
-
                     <input type="file" id="archivo" name="img6" accept=".jpg,.png" required onchange="validar()" />
-
+                    <!---
                     <label>Imagen 7</label>
 
                     <input type="file" id="archivo" name="img7" accept=".jpg,.png" required onchange="validar()" />
@@ -110,6 +109,7 @@
                     <input type="file" id="archivo" name="img9" accept=".jpg,.png" required onchange="validar()" />
                     <label>Imagen 10</label>
                     <input type="file" id="archivo" name="img10" accept=".jpg,.png" required onchange="validar()" />
+                    --->
                 </div>
             </fieldset>
             <fieldset>

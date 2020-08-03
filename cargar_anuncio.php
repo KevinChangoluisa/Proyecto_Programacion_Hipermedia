@@ -5,7 +5,7 @@ if(isset($_POST["submit"])){
     $descripcion = $_POST['descripcion'];
     $n_dormitorios = $_POST['n_dorm'];
     $banio = $_POST['n_banio'];
-    
+    $cocina=0;
     if(!empty($_POST['cocina'])){
         $cocina = $_POST['cocina'];
     }
@@ -87,13 +87,14 @@ if(isset($_POST["submit"])){
    
     $img4 = $_FILES['img4']['tmp_name'];
     $imgContenido4 = addslashes(file_get_contents($img4));
-   
+ 
+     
     $img5 = $_FILES['img5']['tmp_name'];
     $imgContenido5 = addslashes(file_get_contents($img5));
    
     $img6 = $_FILES["img6"]["tmp_name"];
     $imgContenido6 = addslashes(file_get_contents($img6));
-
+/*
     $img7 = $_FILES["img7"]["tmp_name"];
     $imgContenido7 = addslashes(file_get_contents($img7));
     
@@ -106,8 +107,7 @@ if(isset($_POST["submit"])){
     $img10= $_FILES["img10"]["tmp_name"];
     $imgContenido10 = addslashes(file_get_contents($img10));
     
-/*
-    
+
     if($_FILES["img6"]=!NULL){
         echo "Se ha enviado algo";
         $revisar6 = getimagesize($_FILES["img6"]["tmp_name"]);
@@ -146,7 +146,7 @@ if(isset($_POST["submit"])){
          $imgContenido10=NULL;
      }
 */
-     $sql="INSERT INTO anuncios(id_anuncio, nombre_predio, descripcion, n_dormitorios, banio, cocina, piscina, wifi, parqueadero, tv_cable, hidromasaje, agua_caliente, bar, max_personas, img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, ubi_lat, ubi_long, precioxdia, fecha_registro, fecha_inicio, fecha_fin, promocion, fecha_inicio_promocion, fecha_fin_promocion, descuento) VALUES('NULL','$nombre_predio','$descripcion','$n_dormitorios','$banio','$cocina','$piscina','$wifi','$parqueadero','$tv_cable','$hidromasaje','$agua_caliente','$bar','$max_personas','$imgContenido1','$imgContenido2','$imgContenido3','$imgContenido4','$imgContenido5','$imgContenido6','$imgContenido7','$imgContenido8','$imgContenido9','$imgContenido10','$ubi_lat','$ubi_long','$precioxdia','$fecha_registro','$fecha_inicio','$fecha_fin','$promocion','$fecha_inicio_promocion','$fecha_fin_promocion','$total_descuento')";
+     $sql="INSERT INTO anuncios(id_predio, nombre_predio, descripcion, n_dormitorios, banio, cocina, piscina, wifi, parqueadero, tv_cable, hidromasaje, agua_caliente, bar, max_personas, img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, ubi_lat, ubi_long, precioxdia, fecha_registro, fecha_inicio, fecha_fin, promocion, fecha_inicio_promocion, fecha_fin_promocion, descuento) VALUES('NULL','$nombre_predio','$descripcion','$n_dormitorios','$banio','$cocina','$piscina','$wifi','$parqueadero','$tv_cable','$hidromasaje','$agua_caliente','$bar','$max_personas','$imgContenido1','$imgContenido2','$imgContenido3','$imgContenido4','$imgContenido5','$imgContenido6','','','','','$ubi_lat','$ubi_long','$precioxdia','$fecha_registro','$fecha_inicio','$fecha_fin','$promocion','$fecha_inicio_promocion','$fecha_fin_promocion','$total_descuento')";
      if($conn->query($sql) === TRUE){
         echo "Anuncio cargado con exito.";
     }else{
